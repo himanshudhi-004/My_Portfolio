@@ -18,7 +18,14 @@ def create_contact(contact: ContactCreate, db: Session = Depends(get_db)):
         db.add(db_contact)
         db.commit()
         db.refresh(db_contact)
-        return db_contact
+        return {
+            "id": db_contact.id,
+            "name": db_contact.name,
+            "email": db_contact.email,
+            "subject": db_contact.subject,
+            "message": db_contact.message,
+            "created_at": db_contact.created_at
+        }
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=500, detail=str(e))
