@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-fastapi==0.103.2
-uvicorn[standard]==0.23.2
-sqlalchemy==2.0.29
+fastapi==0.95.2
+uvicorn==0.22.0
+sqlalchemy==1.4.49
 psycopg2-binary==2.9.9
 python-dotenv==1.0.0
-=======
-fastapi==0.111.0
-uvicorn[standard]==0.30.0
-sqlalchemy==2.0.36
-psycopg2-binary==2.9.9
-python-dotenv==1.0.1
-pydantic==2.8.2
->>>>>>> 0f4e1b18080aeaddcf4e1efc4c1f2b68fdf9b50d
